@@ -33,8 +33,8 @@ To add a new expense or income, simply enter the amount in the respective input 
 Clicking on the "View Analytics" button on the home page will take you to the Analytics page. This page visualizes the expenses and incomes using a bar chart.
 
 # Technology Stack
-    Python
-    Flask
-    SQLite (for database storage)
-    Bootstrap (for styling)
-    Plotly (for data visualization)
+    Python;
+    Flask;
+    SQLite (for database storage);
+    Bootstrap (for styling);
+    Plotly (for data visualization).
