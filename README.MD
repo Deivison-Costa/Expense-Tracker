@@ -13,7 +13,7 @@ Make sure you have Python installed on your system (Python 3.6 or higher is reco
     On Windows: venv\Scripts\activate
 
 ## Install the required dependencies:
-        pip install Flask
+    pip install Flask
 
 # Usage
 Ensure you are in the project directory.
