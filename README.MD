@@ -23,7 +23,9 @@ This is a simple Expense Tracker web application built using Flask, a Python web
 - Ensure you are in the project directory.
 
 - Run the app.py file to start the Flask application:
+
     python app.py
+
 - Open your web browser and go to http://localhost:5000/ to access the Expense Tracker application.
 
 # Features
