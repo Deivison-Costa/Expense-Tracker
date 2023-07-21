@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Financial Analytics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4"><a href="/" style="text-decoration: none; color: inherit;">Financial Analytics</a></h1>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div id="chart"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Obtendo o valor das listas 'expenses' e 'incomes' do Python e converter em objetos JavaScript
+        var expenses = JSON.parse('{{ expenses | tojson }}');
+        var incomes = JSON.parse('{{ incomes | tojson }}');
+
+        var traceExpenses = {
+            x: Array.from(Array(expenses.length).keys()),
+            y: expenses,
+            type: 'bar',
+            name: 'Expenses'
+        };
+
+        var traceIncomes = {
+            x: Array.from(Array(incomes.length).keys()),
+            y: incomes,
+            type: 'bar',
+            name: 'Incomes'
+        };
+
+        var layout = {
+            title: 'Expenses and Incomes',
+            xaxis: {
+                title: 'Entry'
+            },
+            yaxis: {
+                title: 'Amount'
+            }
+        };
+
+        var data = [traceExpenses, traceIncomes];
+
+        Plotly.newPlot('chart', data, layout);
+    </script>
+</body>
+</html>
