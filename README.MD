@@ -11,17 +11,11 @@ Make sure you have Python installed on your system (Python 3.6 or higher is reco
     pip install virtualenv
     virtualenv venv
     .\venv\Scripts\Activate.ps1
-    pip install flask
-    python app.py
-    Deactivate
 
 ### On Linux:
     sudo apt-get install python3-venv
     python3 -m venv venv
     source meu_env/bin/activate
-    pip install flask
-    python app.py
-    Deactivate
 
 ## Install the required dependencies:
     pip install Flask
@@ -44,8 +38,8 @@ To add a new expense or income, simply enter the amount in the respective input 
 Clicking on the "View Analytics" button on the home page will take you to the Analytics page. This page visualizes the expenses and incomes using a bar chart.
 
 # Technology Stack
-    Python;
-    Flask;
-    SQLite (for database storage);
-    Bootstrap (for styling);
-    Plotly (for data visualization).
+- Python;
+- Flask;
+- SQLite (for database storage);
+- Bootstrap (for styling);
+- Plotly (for data visualization).
