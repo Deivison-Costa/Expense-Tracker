@@ -7,10 +7,21 @@ Clone the repository or download the source code.
 Make sure you have Python installed on your system (Python 3.6 or higher is recommended).
 
 ## Create a virtual environment (optional, but recommended):
+### On Windows:
     pip install virtualenv
-    python -m venv venv
-    source venv/bin/activate  
-    On Windows: venv\Scripts\activate
+    virtualenv venv
+    .\venv\Scripts\Activate.ps1
+    pip install flask
+    python app.py
+    Deactivate
+
+### On Linux:
+    sudo apt-get install python3-venv
+    python3 -m venv venv
+    source meu_env/bin/activate
+    pip install flask
+    python app.py
+    Deactivate
 
 ## Install the required dependencies:
     pip install Flask
