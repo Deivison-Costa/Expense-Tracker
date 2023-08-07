@@ -1,5 +1,8 @@
 # Expense Tracker Application
-This is a simple Expense Tracker web application built using Flask, a Python web framework. It allows users to track their expenses and incomes, view the list of expenses and incomes, and visualize their financial data using bar charts.
+- This is a simple Expense Tracker web application built using Flask, a Python web framework. It allows users to track their expenses and incomes, view the list of expenses and incomes, and visualize their financial data using bar charts.
+
+![Figure 1](https://github.com/Deivison-Costa/Expense-Tracker/assets/112001225/6867cf2c-f5cc-449c-8501-109e4cb23b11)
+![Figure 2](https://github.com/Deivison-Costa/Expense-Tracker/assets/112001225/4d0a7a0b-bad6-4c32-8324-50173e9081d1)
 
 # Installation and Setup
 - Clone the repository or download the source code.
